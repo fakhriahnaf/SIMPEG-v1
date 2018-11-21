@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SIMPEG UNBr</title>
+    <title>SIMPEG UNB</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -32,9 +32,84 @@
 
 </head>
 <body class="hold-transition login-page">
+        <nav class="navbar navbar-inverse" role="navigation" style="margin-bottom: 10">
+
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://unb.ac.id/wp-content/uploads/2014/04/logo-unb-2016.png" height=" 300">
+                            <strong style="margin-left:20px;">
+                                  <h1>  <b>SISTEM KEPEGAWAIAN </b>UNB </h1>
+                            </strong>
+                        </a>
+                    </div>
+                    <!-- start:navbar-header -->
+                    <div class="navbar-header">
+                        <button type="button" class="btn-block btn-drop navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <strong>
+                                <i class="fa fa-bars"></i> Menu Perpustakaan
+                            </strong>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right top-menu" role="navigation">
+                                <li class="">
+                                    <a href="https://unb.ac.id/">
+                                        <div class="text-center">
+                                            <i class="fa fa-globe"></i> WEB
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="cv">
+                                        <div class="text-center">
+                                            <i class="fa fa-phone"></i> Contac Me
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="http://maps.google.com">
+                                        <div class="text-center">
+                                            <i class="fa fa-map"></i> Maps
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs">
+                                        <a>
+                                            <i class="fa fa-clock-o"></i> <span id="jamweke">11:18:35</span>
+                                            <script type="text/javascript">
+                                                <!--
+                                                function startTime() {
+                                                    var today=new Date(),
+                                                        curr_hour=today.getHours(),
+                                                        curr_min=today.getMinutes(),
+                                                        curr_sec=today.getSeconds();
+                                                 curr_hour=checkTime(curr_hour);
+                                                    curr_min=checkTime(curr_min);
+                                                    curr_sec=checkTime(curr_sec);
+                                                    document.getElementById('jamweke').innerHTML=curr_hour+":"+curr_min+":"+curr_sec;
+                                                }
+                                                function checkTime(i) {
+                                                    if (i<10) {
+                                                        i="0" + i;
+                                                    }
+                                                    return i;
+                                                }
+                                                setInterval(startTime, 500);
+                                                //-->
+                                            </script>
+                                        </a>
+                                    </li>
+                                <li class="active">
+                                    <a href="register">
+                                        <div class="text-center">
+                                            <i class="fa fa-user"></i> register
+                                        </div>
+                                    </a>
+                                </li>
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>SIMPEG</b>UNB</a>
+        <a href="{{ url('/home') }}"><br> </br>  </a>
     </div>
 
     <!-- /.login-logo -->
@@ -67,9 +142,7 @@
             <div class="row">
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
-                        <label>
-                            <input type="checkbox" name="remember"> Remember Me
-                        </label>
+                        
                     </div>
                 </div>
                 <!-- /.col -->

@@ -15,6 +15,9 @@ Route::get('/', function () {
   return redirect('home');
 });
 
+Route::get('/calender', function () {
+  return view('calender/calender');
+})->name('calender');
 
 Auth::routes();
 
